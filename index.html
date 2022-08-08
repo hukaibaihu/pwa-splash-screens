@@ -22,22 +22,58 @@
   <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#6F6F6F">
   <meta name="msapplication-TileColor" content="#00aba9">
   <meta name="theme-color" content="#ffffff">
-  <title>PWA Splash Screen</title>
+  <title>牧云台 PWA</title>
+  <style>
+    body { margin: 0 }
+    .fixed-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      display: flex;
+      padding: 12px 16px;
+      align-items: center;
+      box-sizing: border-box;
+      background-color: #fff;
+      box-shadow: 0 -3px 5px rgba(0, 0, 0, .15);
+    }
+    .fixed-bar img {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+    }
+    .fixed-bar-body {
+      margin-left: 12px;
+      flex: 1 1 auto;
+    }
+    .fixed-bar-btn {
+      color: #fff;
+      padding: 12px 20px;
+      text-decoration: none;
+      background-color: #1890ff;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 
 <body>
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>
-  <center>
-    <div style="text-align: left;">
-      <h1>PWA Splash Screens Demo</h1>
-      <p>Add app to your homescreen and launch from app icon to see splash screen.</p>
-      <p>Associated Medium blog post at
-        <a href="https://medium.com/@applification/progressive-web-app-splash-screens-80340b45d210">https://medium.com/@applification/progressive-web-app-splash-screens-80340b45d210</a>
-      </p>
+
+  <div style="text-align:center">
+    <h1>牧云台 PWA Demo</h1>
+    <p>Add app to your homescreen and launch from app icon to see splash screen.</p>
+  </div>
+
+  <div class="fixed-bar">
+    <img src="assets/logo.png" alt="Logo">
+    <div class="fixed-bar-body">
+      <h4 class="fixed-bar-title">牧云台</h4>
     </div>
-  </center>
+    <a class="fixed-bar-btn" download href="assets/muyuntai.mobileconfig">添加到主屏幕</a>
+  </div>
   <script src="app.js"></script>
 </body>
 

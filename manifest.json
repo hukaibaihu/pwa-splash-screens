@@ -1,7 +1,7 @@
 {
-  "name": "PWA Splash",
-  "short_name": "PWA Splash",
-  "description": "PWA SPlash Screens",
+  "name": "牧云台",
+  "short_name": "牧云台",
+  "description": "牧云台",
   "scope": ".",
   "start_url": "/",
   "display": "standalone",
